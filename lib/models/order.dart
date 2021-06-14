@@ -12,5 +12,5 @@ class Order {
     required this.restaurant,
     required this.food,
     required this.quantity,
-  })
+  });
 }

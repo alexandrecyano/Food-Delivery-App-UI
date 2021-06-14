@@ -13,5 +13,5 @@ class Restaurant {
     required this.address,
     required this.rating,
     required this.menu,
-  })
+  });
 }
