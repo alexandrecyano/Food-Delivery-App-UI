@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/data/data.dart';
 import 'package:food_delivery_app_ui/models/restaurant.dart';
+import 'package:food_delivery_app_ui/widgets/ratings_stars.dart';
 import 'package:food_delivery_app_ui/widgets/recent_orders.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -48,9 +49,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       overflow: TextOverflow.ellipsis,
                     ),
-                    //The rating goes here
+                    RatingStars(restaurant.rating),
                     SizedBox(height: 4.0),
-
                     Text(
                       restaurant.address,
                       style: TextStyle(
