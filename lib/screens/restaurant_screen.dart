@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/models/food.dart';
 import 'package:food_delivery_app_ui/models/restaurant.dart';
