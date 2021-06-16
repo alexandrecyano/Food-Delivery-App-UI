@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/models/food.dart';
 import 'package:food_delivery_app_ui/models/restaurant.dart';
@@ -43,6 +45,47 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                   Colors.black.withOpacity(0.3),
                   Colors.black.withOpacity(0.3),
                 ],
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 65.0,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  menuItem.name,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.2,
+                  ),
+                ),
+                Text(
+                  '\$${menuItem.price}',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.2,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Positioned(
+            bottom: 10.0,
+            right: 10.0,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).primaryColor,
+                borderRadius: BorderRadius.circular(30.0),
+              ),
+              child: IconButton(
+                icon: Icon(Icons.add),
+                iconSize: 30.0,
+                color: Colors.white,
+                onPressed: () {},
               ),
             ),
           ),
