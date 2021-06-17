@@ -33,12 +33,14 @@ class _CartScreenState extends State<CartScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text(order.food.name,
-                            style: TextStyle(
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                            overflow: TextOverflow.ellipsis),
+                        Text(
+                          order.food.name,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
                         SizedBox(height: 10.0),
                         Text(
                           order.restaurant.name,
@@ -120,13 +122,14 @@ class _CartScreenState extends State<CartScreen> {
   Widget build(BuildContext context) {
     double totalPrice = 0;
     currentUser.cart.forEach(
-        (Order order) => totalPrice += order.quantity * order.food.price);
+      (Order order) => totalPrice += order.quantity * order.food.price,
+    );
     return Scaffold(
       appBar: AppBar(
         title: Text('Cart (${currentUser.cart.length})'),
       ),
       body: ListView.separated(
-        itemCount: currentUser.cart.length,
+        itemCount: currentUser.cart.length + 1,
         itemBuilder: (BuildContext context, int index) {
           if (index < currentUser.cart.length) {
             Order order = currentUser.cart[index];
