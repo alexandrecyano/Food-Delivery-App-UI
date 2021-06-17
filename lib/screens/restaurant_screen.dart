@@ -166,7 +166,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
               TextButton(
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.symmetric(horizontal: 30.0),
-                  primary: Theme.of(context).primaryColor,
+                  backgroundColor: Theme.of(context).primaryColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10.0),
                   ),
@@ -177,7 +177,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
               TextButton(
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.symmetric(horizontal: 30.0),
-                  primary: Theme.of(context).primaryColor,
+                  backgroundColor: Theme.of(context).primaryColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10.0),
                   ),
