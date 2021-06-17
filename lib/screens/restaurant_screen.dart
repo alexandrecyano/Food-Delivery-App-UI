@@ -115,8 +115,8 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                   children: <Widget>[
                     IconButton(
                       icon: Icon(Icons.arrow_back_ios),
-                      color: Colors.white,
-                      iconSize: 30.0,
+                      color: Theme.of(context).primaryColor,
+                      iconSize: 40.0,
                       onPressed: () => Navigator.pop(context),
                     ),
                     IconButton(
