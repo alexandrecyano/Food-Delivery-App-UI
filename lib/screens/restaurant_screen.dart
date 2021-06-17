@@ -171,7 +171,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                 ),
-                child: Text('Reviews'),
+                child: Text('Reviews', style: TextStyle(color: Colors.white)),
                 onPressed: () {},
               ),
               TextButton(
@@ -183,7 +183,10 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                   ),
                 ),
                 onPressed: () {},
-                child: Text('Contact'),
+                child: Text(
+                  'Contact',
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
             ],
           ),
