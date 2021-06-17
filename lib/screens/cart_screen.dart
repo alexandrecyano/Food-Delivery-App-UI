@@ -64,7 +64,7 @@ class _CartScreenState extends State<CartScreen> {
                               GestureDetector(
                                 onTap: () {},
                                 child: Text(
-                                  '_',
+                                  '-',
                                   style: TextStyle(
                                       color: Theme.of(context).primaryColor,
                                       fontSize: 20.0,
@@ -83,7 +83,7 @@ class _CartScreenState extends State<CartScreen> {
                               GestureDetector(
                                 onTap: () {},
                                 child: Text(
-                                  '_',
+                                  '+',
                                   style: TextStyle(
                                     color: Theme.of(context).primaryColor,
                                     fontSize: 20.0,
