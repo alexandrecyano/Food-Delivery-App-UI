@@ -5,6 +5,11 @@ Food Delivery App UI
   <img src="/screenshots/pic1.PNG"/>
 
   Second Screen
-  
+
   <img src="/screenshots/pic2.PNG"/> 
+
+  Checkout Screen
+
+<img src="/screenshots/pic3.PNG"/> 
+
 </p>
