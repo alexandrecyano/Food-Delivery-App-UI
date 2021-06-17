@@ -118,6 +118,9 @@ class _CartScreenState extends State<CartScreen> {
 
   @override
   Widget build(BuildContext context) {
+    double totalPrice = 0;
+    currentUser.cart.forEach(
+        (Order order) => totalPrice += order.quantity * order.food.price);
     return Scaffold(
       appBar: AppBar(
         title: Text('Cart (${currentUser.cart.length})'),
@@ -196,6 +199,20 @@ class _CartScreenState extends State<CartScreen> {
               blurRadius: 6.0,
             ),
           ],
+        ),
+        child: Center(
+          child: TextButton(
+            child: Text(
+              'CHECKOUT',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.0,
+              ),
+            ),
+            onPressed: () {},
+          ),
         ),
       ),
     );
