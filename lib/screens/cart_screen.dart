@@ -175,7 +175,7 @@ class _CartScreenState extends State<CartScreen> {
                     )
                   ],
                 ),
-                SizedBox(height: 10.0),
+                SizedBox(height: 80.0),
               ],
             ),
           );
